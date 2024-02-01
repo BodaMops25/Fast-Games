@@ -1,0 +1,697 @@
+@font-face {
+	font-family: "Gilroy";
+	src: url(../fonts/Gilroy-Black.woff) format("woff2");
+	font-weight: 800;
+}
+@font-face {
+	font-family: "Gilroy";
+	src: url(../fonts/Gilroy-ExtraBold.woff) format("woff2");
+	font-weight: 700;
+}
+@font-face {
+	font-family: "Gilroy";
+	src: url(../fonts/Gilroy-Bold.woff) format("woff2");
+	font-weight: 600;
+}
+@font-face {
+	font-family: "Gilroy";
+	src: url(../fonts/Gilroy-SemiBold.woff) format("woff2");
+	font-weight: 500;
+}
+@font-face {
+	font-family: "Gilroy";
+	src: url(../fonts/Gilroy-Medium.woff) format("woff2");
+	font-weight: 400;
+}
+@font-face {
+	font-family: "Gilroy";
+	src: url(../fonts/Gilroy-Regular.woff) format("woff2");
+	font-weight: 300;
+}
+@font-face {
+	font-family: "Gilroy";
+	src: url(../fonts/Gilroy-Light.woff) format("woff2");
+	font-weight: 200;
+}
+@font-face {
+	font-family: "Gilroy";
+	src: url(../fonts/Gilroy-Thin.woff) format("woff2");
+	font-weight: 100;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	font-family: Gilroy;
+	font-size: 700;
+	background-color: #0A1020;
+	height: 100%;
+	position: relative;
+	/*width: 100%;*/
+}
+h1, h2, h3, p {
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	color: unset;
+}
+
+/*--------------------------------------------------*/
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #141B2E;
+	height: 120px;
+	padding: 0 5%;
+	box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.3);
+	/*width: 120%;*/
+}
+
+.logo {
+	width: 186px;
+	font-size: 40px;
+	line-height: 38px;
+	font-weight: 600;
+}
+
+.logoTextRight{
+	text-align: right;
+}
+
+.headerItems {
+	width: 463px;
+	display: flex;
+	justify-content: space-between;
+	color: #898D96;
+	font-size: 18px;
+}
+
+.headerItems .Item {
+	height: 62px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.activ {
+	color: #EBEBFF;
+}
+
+.headerItems .Item:hover {
+	color: #EBEBFF;
+}
+
+.headerItems .vip {
+	color: #B8930E;
+}
+
+.headerItems .vip:hover {
+	color: #FFC700;
+}
+
+.headerSN {
+	width: 180px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.headerSN .SNBG {
+	width: 30px;
+	height: 30px;
+	background-color: #606060;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.headerSN .SNBG:hover {
+	background-color: #949494;
+}
+
+.headerUserInfo {
+	text-align: right;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: repeat(3, 1fr);
+	grid-template-areas: "balance balance avatar"
+						 "balanceNumber balanceNumber avatar"
+						 "replenish withdraw avatar"
+}
+
+.balance {
+	font-size: 17px;
+	color: #898D96;
+	margin-bottom: 10px;
+	grid-area: balance;
+}
+
+.balanceNumber {
+	font-weight: 600;
+	font-size: 20px;
+	grid-area: balanceNumber;
+}
+
+.balanceNumber img {
+	margin-right: 10px;
+	cursor: pointer;
+}
+
+.replenish {
+	width: 103px;
+	height: 27px;
+	border-radius: 5px;
+	text-align: center;
+	line-height: 27px;
+	font-size: 14px;
+	color: #9ED2A9;
+	font-weight: 600;
+	background-color: #3DA554;
+	grid-area: replenish;
+	margin-right: ;
+}
+
+.replenish:hover {
+	color: #fff;
+}
+
+.withdraw {
+	width: 103px;
+	height: 27px;
+	border-radius: 5px;
+	text-align: center;
+	line-height: 27px;
+	font-size: 14px;
+	color: #CA9999;
+	font-weight: 600;
+	background-color: #953333;
+	grid-area: withdraw;
+	margin-left: 5px;
+}
+
+.withdraw:hover {
+	color: #fff;
+}
+
+.avatar {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background-color: #004E8F;
+	margin-left: 19px;
+	/*text-align: center;*/
+	font-size: 22px;
+	font-weight:300;
+	color: #C0C0C0;
+	grid-area: avatar;
+	margin-top: 20%;
+}
+
+.avatar:hover {
+	color: #fff;
+}
+
+/*-----------------------------------------*/
+
+.content {
+	display: flex;
+	/*width: 120%;*/
+}
+
+.gameContent {
+	width: 100%;
+}
+
+.gameContainer {
+	/*width: 1120px;*/
+	/*height: 586px;*/
+	margin: 38px 10% 50px 10%;
+	background-color: #141B2E;
+	border-radius: 10px;
+}
+
+.gameContainer .gameHeader {
+	width: 100%;
+	height: 64px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.gameContainer .gameHeader .logo {
+	font-size: 25px;
+	font-weight: 600;
+	display: flex;
+	align-items: center;
+}
+
+.gameContainer .gameHeader .betsType {
+	width: 439px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 20px;
+	font-weight: 400;
+	color: rgba(255, 255, 255, 0.5);
+}
+
+.gameContainer .gameHeader .betsType .betType:hover {
+	cursor: pointer;
+	color: rgba(255, 255, 255, 1);
+}
+
+.gameContainer .gameHeader .gameSettings {
+	width: 120px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.gameContainer .gameHeader .gameSettings img {
+	cursor: pointer;
+}
+
+.gameContainer .gameHeader .logo img {
+	margin-right: 15px;
+}
+
+.gameContainer .gameInner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 30vw;
+	/*position: relative;*/
+}
+
+.gameContainer .gameInner .gameLeft {
+	width: 40vw;
+}
+
+.gameContainer .gameInner .gameRight {
+	width: 100%;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.gameContainer .gameInner .gameLeft .rulet {
+}
+
+.gameContainer .gameInner .gameLeft .settings {
+	height: 30vw;
+	width: 100%;
+	background-color: #141B2E;
+	z-index: 0;
+	padding-top: 5px;
+	box-shadow: inset  5px 0 10px 0 rgba(0, 0, 0, 0.2),
+					   0 -5px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.gameContainer .gameInner .gameLeft .settings .settingsUI {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 11px;
+}
+
+.gameContainer .gameInner .gameLeft .settings .settingsUI .bet {
+	font-size: 18px;
+	font-weight: 400;
+	width: 35%;
+	margin-left: 0.7vw;
+	margin-top: 0.2vw;
+}
+
+.gameContainer .gameInner .gameLeft .settings .settingsUI .bet input{
+	background-color: unset;
+	color: #fff;
+	border: none;
+	font-size: 18px;
+	font-weight: 400;
+	font-family: Gilroy;
+	width: 50%;
+	margin-top: 0.2vw;
+}
+
+.gameContainer .gameInner .gameLeft .settings .settingsUI .buttons {
+	font-size: 0.8vw;
+	font-weight: 400;
+	margin-right: 10px;
+}
+
+.gameContainer .gameInner .gameLeft .settings .settingsUI .buttons .button {
+	display: inline;
+	margin-left: 10px;
+	background-color: #3C4B74;
+	border-radius: 5px;
+	padding: 5px 10px;
+	cursor: pointer;
+}
+
+.gameContainer .gameInner .gameLeft .settings .settingsUI .buttons .button img {
+	margin-bottom: -8px;
+}
+
+.gameContainer .gameInner .gameLeft .settings .settingsUI .buttons .button:hover {
+	background-color: #2D3856;
+}
+
+.gameContainer .gameInner .gameLeft .settings .settingsUI .buttons .button img {
+	margin-bottom: -9px;
+}
+
+.gameContainer .gameInner .gameLeft .settings .line {
+	width: 100%;
+	height: 1px;
+	background-color: rgba(255, 255, 255, 0.3);
+	margin-bottom: 35px;
+}
+
+.gameContainer .gameInner .gameLeft .settings .settingsButtons {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-bottom: 1vw;
+	padding: 0 2vw;
+}
+
+.gameContainer .gameInner .gameLeft .settings .settingsButtons p {
+	font-size: 1vw;
+	font-weight: 400;
+	border-radius: 5px;
+	background-color: #8A1218;
+	padding: 10px 15px;
+	cursor: pointer;
+	margin-bottom: 2vw;
+}
+
+.gameContainer .gameInner .gameLeft .settings .settingsButtons p:hover {
+	opacity: 70%;
+}
+
+.gameContainer .gameInner .gameLeft .settings .settingsButtons .red {
+	background-color: #8A1218;
+}
+.gameContainer .gameInner .gameLeft .settings .settingsButtons .green {
+	background-color: #248240;
+}
+.gameContainer .gameInner .gameLeft .settings .settingsButtons .black {
+	background-color: #23252A;
+}
+
+.gameContainer .gameInner .gameLeft .settings .betNumbers {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.gameContainer .gameInner .gameLeft .settings .betNumbers p {
+	font-size: 1.2vw;
+	font-weight: 600;
+	border-radius: 50%;
+	background-color: #8A1218;
+	margin-left: 1.7vw;
+	margin-bottom: 1.7vw;
+	width: 2.5vw;
+	height: 2.5vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+
+.gameContainer .gameInner .gameLeft .settings .betNumbers p:hover {
+	opacity: 70%;
+}
+
+.gameContainer .gameInner .gameLeft .settings .betNumbers .red {
+	background-color: #8A1218;
+}
+.gameContainer .gameInner .gameLeft .settings .betNumbers .black {
+	background-color: #23252A;
+}
+.gameContainer .gameInner .gameLeft .settings .betNumbers .green {
+	background-color: #248240;
+}
+
+/*--------------------------------------------------------*/
+
+.currentPlayersContainer {
+	/*width: 1125px;	*/
+	border-radius: 10px;
+	background-color: #141B2E;
+	margin: 50px 10%;
+	padding: 38px 51px;
+}
+
+.currentPlayersContainer .sumPlayers {
+	display: inline-block;
+	font-size: 20px;
+	font-weight: 600;
+	margin-right: 113px;
+}
+
+.currentPlayersContainer .sumMoney {
+	display: inline-block;
+	font-size: 20px;
+	font-weight: 600;
+	margin-bottom: 20px;
+}
+
+.currentPlayersContainer .playersContainer {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.currentPlayersContainer .playersContainer .redBet {
+	border-top: 3px solid #CF0202;
+}
+.currentPlayersContainer .playersContainer .blackBet {
+	border-top: 3px solid #000000;
+}
+.currentPlayersContainer .playersContainer .greenBet {
+	border-top: 3px solid #2E8A52;
+	margin-top: 20px;
+}
+
+.currentPlayersContainer .playersContainer .player {
+	width: 287px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 18px;
+	font-weight: 400;
+	margin-top: 24px;
+}
+
+.currentPlayersContainer .playersContainer .player .Name {
+	display: flex;
+	align-items: center;
+}
+
+.currentPlayersContainer .playersContainer .player .Name img {
+	margin-right: 20px;
+}
+
+.currentPlayersContainer .playersContainer .player .bet {
+	background-color: #3C4B74;
+	border-radius: 5px;
+	padding: 8px 0;
+	width: 80px;
+	text-align: center;
+}
+
+
+/*-----------------------------------------------*/
+
+.leftTab {
+	width: 63px;
+	min-height: 2798px;
+	height: 100%;
+	background-color: #141B2E;
+	position: relative;
+	padding: 44px 17px;
+	z-index: -10;
+	margin-right: 5px;
+}
+
+.leftTab a img{
+	margin-bottom: 30px;
+}
+
+/*---------------------------------------------*/
+
+.titleContain {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.title {
+	font-size: 25px;
+	font-weight: 700;
+}
+
+.titleGames {
+	margin-top: 53px;
+	margin-bottom: 38px;
+}
+
+.titleWinners {
+	margin-bottom: 18px;
+}
+
+.winners {
+	/*width: 1115px;*/
+	height: 694px;
+	margin: 0 auto;
+	background-color: #141B2E;
+	border-radius: 10px;
+	font-size: 1.5vw;
+	padding: 0 30px;
+	margin: 0 auto;
+	margin-bottom: 80px;
+}
+
+.winners .main {
+	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.08);
+}
+
+.winners .main th{
+	text-align: left;
+}
+
+.winners .main th:first-child {
+	text-align: center;
+}
+
+.winners tr th{
+	text-align: left;
+	padding-left: 50px;
+	font-weight: 400;
+}
+
+.winners tr th:first-child {
+	padding-left: 20px;
+}
+
+.winners tr th:last-child {
+	text-align: center;
+}
+
+.winners tr th img {
+	margin: 0 15px -10px 15px;
+}
+
+.winners tr th .goldIngot {
+	margin-bottom: -4px;
+}
+
+.stats {
+	/*width: 929px;*/
+	height: 58px;
+	margin: 0 auto 41px auto;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.statItem {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: right;
+	font-size: 20px;
+	line-height: 16px;
+}
+
+.statItem img {
+	margin-right: 10px;
+}
+
+.statItem p:first-child {
+	color: #4A699C;
+}
+
+.grey {
+	color: #84878F;
+	margin-bottom: 42px;
+}
+
+.weTake {
+	font-size: 20px;
+}
+
+.payment {
+	width: 256px;
+	height: 69px;
+	margin: 24px auto 73px auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	padding-left: 15px;
+}
+
+.payment img {
+	margin-right: 10px;
+	margin-bottom: 10px;
+	opacity: 40%;
+}
+
+.payment .bra {
+	margin-right: 38px;
+}
+
+.payment img:hover {
+	opacity: 80%;
+}
+
+.usefulLink {
+	width: 700px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	font-size: 20px;
+	line-height: 25px;
+}
+
+.usefulLink a {
+	opacity: 70%;
+	border-bottom: 2px solid #fff;
+	margin-bottom: 20px;
+}
+.usefulLink a:hover {
+	opacity: 100%;
+}
+
+.usefulLink a:first-child {
+	margin-right: 105px;
+}
+
+.questions {
+	position: absolute;
+	right: 20px;
+	bottom: 300px;
+}

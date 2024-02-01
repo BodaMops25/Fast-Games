@@ -1,0 +1,388 @@
+@font-face {
+	font-family: "Gilroy";
+	src: url(../fonts/Gilroy-Black.woff) format("woff2");
+	font-weight: 800;
+}
+@font-face {
+	font-family: "Gilroy";
+	src: url(../fonts/Gilroy-ExtraBold.woff) format("woff2");
+	font-weight: 700;
+}
+@font-face {
+	font-family: "Gilroy";
+	src: url(../fonts/Gilroy-Bold.woff) format("woff2");
+	font-weight: 600;
+}
+@font-face {
+	font-family: "Gilroy";
+	src: url(../fonts/Gilroy-SemiBold.woff) format("woff2");
+	font-weight: 500;
+}
+@font-face {
+	font-family: "Gilroy";
+	src: url(../fonts/Gilroy-Medium.woff) format("woff2");
+	font-weight: 400;
+}
+@font-face {
+	font-family: "Gilroy";
+	src: url(../fonts/Gilroy-Regular.woff) format("woff2");
+	font-weight: 300;
+}
+@font-face {
+	font-family: "Gilroy";
+	src: url(../fonts/Gilroy-Light.woff) format("woff2");
+	font-weight: 200;
+}
+@font-face {
+	font-family: "Gilroy";
+	src: url(../fonts/Gilroy-Thin.woff) format("woff2");
+	font-weight: 100;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	font-family: Gilroy;
+	font-size: 700;
+	background-color: #0A1020;
+	/*width: 103.5%;*/
+	position: relative;
+}
+h1, h2, h3, p {
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	color: unset;
+}
+
+/*--------------------------------------------------*/
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #141B2E;
+	height: 120px;
+	padding: 0 5%;
+	box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.3);
+}
+
+.logo {
+	width: 186px;
+	font-size: 40px;
+	line-height: 38px;
+	font-weight: 600;
+}
+
+.logoTextRight{
+	text-align: right;
+}
+
+.headerItems {
+	width: 463px;
+	display: flex;
+	justify-content: space-between;
+	color: #898D96;
+	font-size: 18px;
+}
+
+.headerItems .Item {
+	height: 62px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.activ {
+	color: #EBEBFF;
+}
+
+.headerItems .Item:hover {
+	color: #EBEBFF;
+}
+
+.headerItems .vip {
+	color: #B8930E;
+}
+
+.headerItems .vip:hover {
+	color: #FFC700;
+}
+
+.headerSN {
+	width: 180px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.headerSN .SNBG {
+	width: 30px;
+	height: 30px;
+	background-color: #606060;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.headerSN .SNBG:hover {
+	background-color: #949494;
+}
+
+.headerUserInfo {
+	text-align: right;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: repeat(3, 1fr);
+	grid-template-areas: "balance balance avatar"
+						 "balanceNumber balanceNumber avatar"
+						 "replenish withdraw avatar"
+}
+
+.balance {
+	font-size: 17px;
+	color: #898D96;
+	margin-bottom: 10px;
+	grid-area: balance;
+}
+
+.balanceNumber {
+	font-weight: 600;
+	font-size: 20px;
+	grid-area: balanceNumber;
+}
+
+.balanceNumber img {
+	margin-right: 10px;
+	cursor: pointer;
+}
+
+.replenish {
+	width: 103px;
+	height: 27px;
+	border-radius: 5px;
+	text-align: center;
+	line-height: 27px;
+	font-size: 14px;
+	color: #9ED2A9;
+	font-weight: 600;
+	background-color: #3DA554;
+	grid-area: replenish;
+	margin-right: ;
+}
+
+.replenish:hover {
+	color: #fff;
+}
+
+.withdraw {
+	width: 103px;
+	height: 27px;
+	border-radius: 5px;
+	text-align: center;
+	line-height: 27px;
+	font-size: 14px;
+	color: #CA9999;
+	font-weight: 600;
+	background-color: #953333;
+	grid-area: withdraw;
+	margin-left: 5px;
+}
+
+.withdraw:hover {
+	color: #fff;
+}
+
+.avatar {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background-color: #004E8F;
+	margin-left: 19px;
+	/*text-align: center;*/
+	font-size: 22px;
+	font-weight:300;
+	color: #C0C0C0;
+	grid-area: avatar;
+	margin-top: 20%;
+}
+
+.avatar:hover {
+	color: #fff;
+}
+
+/*-----------------------------------------*/
+
+.payoutTitle {
+	width: 100%;
+	text-align: center;
+	font-size: 30px;
+	font-weight: 600;
+	margin: 38px 0;
+}
+
+.payoutContainer {
+	/*width: 1014px;*/
+	height: 1088px;
+	background-color: #141B2E;
+	border-radius: 10px;
+	margin: 0 10% 44px 10%;
+	display: grid;
+	grid-template-rows: repeat(17, 60px);
+	padding-left: 20px;
+}
+
+.payoutContainer .head {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	text-align: left;
+	font-size: 1vw;
+	font-weight: 300;
+}
+
+.payoutContainer .head:first-child {
+	box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.09);
+}
+
+.payoutContainer .head:first-child p {
+	text-align: center;
+}
+
+.payoutContainer .name {
+	width: 205px;
+	padding-bottom: 10px;
+}
+
+.payoutContainer .head img {
+	margin-bottom: -10px;
+	margin-right: 10px;
+	opacity: 70%;
+}
+
+.payoutContainer .head img:hover {
+	opacity: 100%;
+}
+
+.payoutContainer .payout {
+	width: 205px;
+	text-align: left;
+}
+
+.payoutContainer .summ {
+	width: 120px;
+	text-align: center;
+}
+
+.payoutContainer .date {
+	width: 170px;
+}
+
+
+/*------------------------------------------------------*/
+
+.grey {
+	color: #84878F;
+	margin-bottom: 42px;
+}
+
+.weTake {
+	font-size: 20px;
+}
+
+.payment {
+	width: 256px;
+	height: 69px;
+	margin: 24px auto 73px auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	padding-left: 15px;
+}
+
+.payment img {
+	margin-right: 10px;
+	margin-bottom: 10px;
+	opacity: 40%;
+}
+
+.payment .bra {
+	margin-right: 38px;
+}
+
+.payment img:hover {
+	opacity: 80%;
+}
+
+.usefulLink {
+	width: 700px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	font-size: 20px;
+	line-height: 25px;
+}
+
+.usefulLink a {
+	opacity: 70%;
+	border-bottom: 2px solid #fff;
+	margin-bottom: 20px;
+}
+.usefulLink a:hover {
+	opacity: 100%;
+}
+
+.usefulLink a:first-child {
+	margin-right: 105px;
+}
+
+.questions {
+	position: absolute;
+	right: 30px;
+	bottom: 300px;
+}
+
+.titleContain {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.content {
+	display: flex;
+	/*width: 120%;*/
+}
+
+.gameContent {
+	width: 100%;
+}
+
+.leftTab {
+	width: 63px;
+	min-height: 1698px;
+	height: 100%;
+	background-color: #141B2E;
+	position: relative;
+	padding: 44px 17px;
+	z-index: -10;
+	margin-right: 5px;
+}
+
+.leftTab a img{
+	margin-bottom: 30px;
+}
